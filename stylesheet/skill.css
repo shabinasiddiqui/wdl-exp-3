@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/wdl3-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+    background: black;
+    transition: all 0.5s ease;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+    background-color: aliceblue;
+    color: black;
+    text-shadow: 1px 1px 1px tomato;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+#btn,
+#cancel {
+    height: 30px;
+    width: 30px;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 195px;
+}
+
+.home {
+    height: 25px;
+    width: 30px;
+}
+
+.about {
+    height: 25px;
+    width: 30px;
+}
+
+.skill {
+    height: 25px;
+    width: 30px;
+}
+
+.contact {
+    height: 25px;
+    width: 30px;
+}
+
+.qualification {
+    height: 25px;
+    width: 30px;
+}
+
+header {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px tomato, -2px -2px 2px tomato;
+}
+
+.logo {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.container_a {
+    display: flex;
+    justify-content: center;
+}
+
+.php {
+    height: 90px;
+    width: 90px;
+    padding-top: 7px;
+    transition: 0.8s;
+    border-radius: 30px;
+}
+
+.php:hover {
+    transform: scale(1.2);
+}
+
+.bootstrap {
+    height: 120px;
+    width: 120px;
+    padding-top: 7px;
+    transition: all 0.8s;
+}
+
+.bootstrap:hover {
+    transform: scale(1.2);
+}
+
+.python {
+    height: 85px;
+    width: 85px;
+    padding-top: 5px;
+    transition: all 0.8s;
+}
+
+.python:hover {
+    transform: scale(1.2);
+}
+
+.java {
+    height: 85px;
+    width: 110px;
+    padding-top: 5px;
+    transition: all 0.8s;
+}
+
+.java:hover {
+    transform: scale(1.2);
+}
+
+.c_plus {
+    height: 70px;
+    width: 70px;
+    padding-top: 7px;
+    transition: all 0.8s;
+}
+
+.c_plus:hover {
+    transform: scale(1.2);
+}
+
+.c {
+    height: 70px;
+    width: 60px;
+    padding-top: 7px;
+    transition: all 0.8s;
+}
+
+.c:hover {
+    transform: scale(1.2);
+}
+
+.html {
+    height: 80px;
+    width: 80px;
+    padding-top: 6px;
+    transition: all 0.8s;
+}
+
+.html:hover {
+    transform: scale(1.2);
+}
+
+.js {
+    height: 77px;
+    width: 55px;
+    padding-top: 5px;
+    transition: all 0.8s;
+}
+
+.js:hover {
+    transform: scale(1.2);
+}
+
+.css {
+    height: 82px;
+    width: 80px;
+    padding-top: 5px;
+    transition: all 0.8s;
+}
+
+.css:hover {
+    transform: scale(1.2);
+}
+
+.mysql {
+    margin-top: 7;
+    width: 100px;
+    height: 130px;
+    transition: all 0.8s;
+}
+
+.mysql:hover {
+    transform: scale(1.2);
+}
+
+.para {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Rokkitt', serif;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 70px;
+    color: #D73A3A;
+    text-shadow: 1px 1px 1px white;
+    letter-spacing: 3px;
+}
+
+.logo div {
+    height: 100px;
+    width: 130px;
+}
+
+img {
+    align-self: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
